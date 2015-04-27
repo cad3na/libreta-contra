@@ -1,0 +1,73 @@
+
+\documentclass{article}
+\usepackage{calc}
+\usepackage[paperwidth=7in, paperheight=5.2in, top=0.375in, bottom=0.25in, left=0.125in, right=0.125in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{microtype}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+
+\usepackage[spanish,es-noquoting]{babel}
+
+\renewcommand{\normalsize}{\fontsize{14}{14}\selectfont}
+
+\newlength{\wholeboxwd} \setlength{\wholeboxwd}{0.48\textwidth}
+\newlength{\wholeboxht} \setlength{\wholeboxht}{0.465\textheight}
+%
+\newlength{\cuewd}   \setlength{\cuewd}{0.2\wholeboxwd}
+\newlength{\summht}  \setlength{\summht}{0.1\wholeboxht}
+\newlength{\cgridht} \setlength{\cgridht}{\wholeboxht-\summht}
+\newlength{\cgridwd} \setlength{\cgridwd}{\wholeboxwd-\cuewd}
+\newlength{\xorig}   \setlength{\xorig}{0cm}
+\newlength{\yorig}   \setlength{\yorig}{0cm}
+
+\definecolor{gris}{gray}{0.5}
+\definecolor{grisclaro}{gray}{0.2}
+
+\begin{document}
+
+\linespread{1.6}
+
+\fontseries{l}\selectfont
+
+\pagenumbering{gobble}
+
+\color{gris}
+
+
+
+\begin{center}
+	\begin{minipage}{0.4675\textwidth}
+		Fecha: \\
+		Referencia: \\
+
+		Letras $\square$ \hfill Numeros $\square$ \hfill Mayusculas $\square$ \\
+		Usuario: \\
+		Contraseña: \\
+
+		\begin{tikzpicture}
+		    % Grid
+		    \draw[xscale=1, yscale=1.3, step=1cm, fill=gris, very thin] (\xorig,\yorig) grid (8cm,5cm);
+		\end{tikzpicture}
+	\end{minipage} \hspace{0.5cm}
+	\begin{minipage}{0.4675\textwidth}
+		Fecha: \\
+		Referencia: \\
+
+		Letras $\square$ \hfill Numeros $\square$ \hfill Mayusculas $\square$ \\
+		Usuario: \\
+		Contraseña: \\
+
+		\begin{tikzpicture}
+		    % Grid
+		    \draw[xscale=1, yscale=1.3, step=1cm, fill=gris, very thin] (\xorig,\yorig) grid (8cm,5cm);
+		\end{tikzpicture}
+	\end{minipage}
+\end{center}
+
+\end{document}
