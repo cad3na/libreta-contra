@@ -13,6 +13,7 @@
 \usepackage[T1]{fontenc}
 
 \usepackage[spanish,es-noquoting]{babel}
+\usepackage{ulem}
 
 \renewcommand{\normalsize}{\fontsize{14}{14}\selectfont}
 
@@ -43,33 +44,49 @@
 
 \begin{center}
 	\begin{minipage}{0.4675\textwidth}
-		Fecha: $\rule{1cm}{0.15mm}$ \\
-		Razón social: \\
-		RFC: \\
-		Calle y número: \\
-		Localidad: \\
-		Del. o Mun.: \\
-		CP: \\
-		Ciudad: \\
-		País: \\
-		Numero de cuenta: \\
-		Banco de cuenta: \\
-		Método de pago: \\
-		Referencia de pago:
+		Fecha \sout{\hfill\mbox{}} \hspace{1.25cm} / \hspace{1.25cm} / \hspace{1.25cm} \\
+		Razón social: \uline{\hfill\mbox{}} \\
+		RFC: \uline{\hfill\mbox{}} \\
+		Calle y \#: \uline{\hfill\mbox{}} \\
+		Loc.: \uline{\hfill\mbox{}} \\
+		Del. o Mun.: \uline{\hfill\mbox{}} \\
+		CP: \uline{\hfill\mbox{}} \\
+		Ciudad: \uline{\hfill\mbox{}} \\
+		País: \uline{\hfill\mbox{}} \\
+		\# de cuenta: \uline{\hfill\mbox{}} \\
+		Banco: \uline{\hfill\mbox{}} \\
+		Método de pago: \uline{\hfill\mbox{}} \\
+		Ref. de pago \sout{\hfill{}\mbox{}} \raisebox{-0.6em}[0pt][0pt]{
+		\begin{tikzpicture}
+		    % Grid
+		    \draw[xscale=1, yscale=1.3, step=0.7cm, fill=gris, very thin] (\xorig,\yorig) grid (2.8cm,0.7cm);
+		\end{tikzpicture}}\\
+		email 1: \uline{\hfill{}\mbox{}} \\
+		email 2: \uline{\hfill{}\mbox{}} \\
+		Tel.: \uline{\hfill{}\mbox{}}
 
 	\end{minipage} \hspace{0.5cm}
 	\begin{minipage}{0.4675\textwidth}
-		Fecha: \\
-		Elementos requeridos: \\
-		a-z $\square$ \hspace{1.7em} A-Z $\square$ \hspace{1.7em} 0-9 $\square$ \hspace{1.7em} +-*... $\square$ \\
-		Referencia: \\
-		Usuario: \\ \\
-		Contraseña: \\
-
+		Fecha \sout{\hfill\mbox{}} \hspace{1.25cm} / \hspace{1.25cm} / \hspace{1.25cm} \\
+		Razón social: \uline{\hfill\mbox{}} \\
+		RFC: \uline{\hfill\mbox{}} \\
+		Calle y \#: \uline{\hfill\mbox{}} \\
+		Loc.: \uline{\hfill\mbox{}} \\
+		Del. o Mun.: \uline{\hfill\mbox{}} \\
+		CP: \uline{\hfill\mbox{}} \\
+		Ciudad: \uline{\hfill\mbox{}} \\
+		País: \uline{\hfill\mbox{}} \\
+		\# de cuenta: \uline{\hfill\mbox{}} \\
+		Banco: \uline{\hfill\mbox{}} \\
+		Método de pago: \uline{\hfill\mbox{}} \\
+		Ref. de pago \sout{\hfill{}\mbox{}} \raisebox{-0.6em}[0pt][0pt]{
 		\begin{tikzpicture}
 		    % Grid
-		    \draw[xscale=1, yscale=1.3, step=1cm, fill=gris, very thin] (\xorig,\yorig) grid (8cm,5cm);
-		\end{tikzpicture}
+		    \draw[xscale=1, yscale=1.3, step=0.7cm, fill=gris, very thin] (\xorig,\yorig) grid (2.8cm,0.7cm);
+		\end{tikzpicture}}\\
+		email 1: \uline{\hfill{}\mbox{}} \\
+		email 2: \uline{\hfill{}\mbox{}} \\
+		Tel.: \uline{\hfill{}\mbox{}}
 	\end{minipage}
 \end{center}
 
